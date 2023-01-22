@@ -124,7 +124,14 @@
   color: #ffffff;
   text-decoration: none;
 }
-.header__nav .nav__list__item__link:hover {
+.header__nav .nav__list__item__link::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  margin-top: 2px;
+}
+.header__nav .nav__list__item__active {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
@@ -133,6 +140,16 @@
   /* identical to box height, or 27px */
   letter-spacing: 0.05em;
   color: #ffffff;
+  position: relative;
+}
+.header__nav .nav__list__item__active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: white;
+  margin-top: 2px;
 }
 .header__nav .nav__icons {
   max-width: 196px;
@@ -142,7 +159,16 @@
   justify-content: space-between;
   min-height: 27px;
 }
+.header__nav .nav__icons__btn {
+  background: transparent;
+  border: none;
+}
 
+@media only screen and (max-width: 992px) {
+  .media__width__992 {
+    display: none;
+  }
+}
 @font-face {
   font-family: "myFonts";
   src: url("../fonts/Roboto-Bold.ttf");
@@ -159,17 +185,17 @@
   font-family: "open sans";
   src: url("../fonts/OpenSans-Regular.ttf");
 }
-.section-benefits {
+.section {
   background: #E0EFF6;
   display: flex;
   justify-content: center;
   padding: 100px 0;
 }
-.section-benefits .benefits {
+.section .benefits {
   display: flex;
   flex-direction: column;
 }
-.section-benefits .benefits__title {
+.section .benefits__title {
   font-family: Playfair Display;
   font-size: 64px;
   font-weight: 700;
@@ -178,20 +204,20 @@
   text-align: center;
   color: #07484A;
 }
-.section-benefits .benefits__cards {
+.section .benefits__cards {
   display: flex;
   gap: 10px;
   width: 80%;
   justify-content: space-between;
   margin: 114.16px auto;
 }
-.section-benefits .benefits__cards_card {
+.section .benefits__cards_card {
   color: #07484A;
   max-width: 287px;
   width: 100%;
   text-align: center;
 }
-.section-benefits .benefits__cards_card h3 {
+.section .benefits__cards_card h3 {
   padding-top: 32px;
   font-family: Playfair Display;
   font-size: 36px;
@@ -199,7 +225,7 @@
   line-height: 48px;
   letter-spacing: 0em;
 }
-.section-benefits .benefits__cards_card p {
+.section .benefits__cards_card p {
   font-size: 24px;
   font-weight: 400;
   line-height: 33px;
@@ -209,14 +235,19 @@
 }
 
 .hero {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background-image: url("../../images/header.png");
+  position: relative;
+  height: 100vh;
+}
+.hero__bg {
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  background-image: url("../../images/header.png");
 }
 
 form {

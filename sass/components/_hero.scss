@@ -1,10 +1,15 @@
 .hero {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background-image: url('../../images/header.png');
-  height: 100vh;
+position: relative;
+height: 100vh;
+  &__bg {
+      height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-image: url('../../images/header.png');
+  }
 }

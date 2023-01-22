@@ -11,25 +11,28 @@ $('.header__modal__cloce').addEventListener(
 )
 // console.log($("h1"));
 // Modal window start
-// let modal = document.getElementById('myModal')
+let modal = document.getElementById('myModal')
 
-// let btn = document.getElementById('myBtn')
+let btn2 = document.getElementById('myBtn')
+let span = document.getElementsByClassName('close')[0]
 
-// let span = document.getElementsByClassName('close')[0]
+btn2.addEventListener("click", ()=>{
 
-// btn.onclick = function () {
-//   modal.style.display = 'block'
-// }
+  modal.classList.add("block")
+})
+btn2.onclick = function () {
+  modal.style.display = 'block'
+}
 
-// span.onclick = function () {
-//   modal.style.display = 'none'
-// }
+span.onclick = function () {
+  modal.style.display = 'none'
+}
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = 'none'
-//   }
-// }
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
+}
 // Dark mode start
 // Input validator function
 // let form = document.querySelector('#formRegister')
@@ -70,7 +73,7 @@ $('.header__modal__cloce').addEventListener(
 //   if (elEmail.value.length > 0 && elNames.value.length > 0) {
 //     localStorage.setItem('validation-email', elEmail.value)
 //     localStorage.setItem('validation-name', elNames.value)
-//     alert('succsess full add ' + elNames.value)
+//     // alert('succsess full add ' + elNames.value)
 //     elEmail.value = ''
 //     elNames.value = ''
 //     elEmail.classList.remove('input-valid')

@@ -33,7 +33,7 @@
                 <div class="nav__icons">
                     <a href="#" class="nav__icons__btn__href"><img src="./images/search.png" alt="img"></a>
                     <a href="#" class="nav__icons__btn__href"><img src="./images/shop.png" alt="img"></a>
-                    <a href="#" class="nav__icons__btn__href">
+                    <a class="nav__icons__btn__href" id="myBtn">
                         <img src="./images/user.png" alt="img">
                     </a>
                 </div>
@@ -113,6 +113,27 @@
             </div>
         </section>
     </header>
+    <div id="myModal" class="modalWindow">
+        <div class="modal-content">
+            <form action="https://echo.htmlacademy.ru" id="formRegister" class="formRegister" method="post">
+                <div class="formRegister__title">
+                    <h2>Registraton</h2>
+                    <p><span class=" modal-content__close close">&times;</span></p>
+                </div>
+                <div class="formRegister__inputWrapper">
+                    <img src="./images/user2.png" alt="user2"> <input type="text" class="form-control"
+                        placeholder="User Name" id="email">
+                </div>
+                <div class="formRegister__inputWrapper">
+                    <img src="./images/user3.png" alt="user2">
+                    <input type="password" class="form-control" placeholder="Password" id="names">
+                </div>
+
+                <button type="submit" class="form-control btnSubmit">submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- <button id="myBtn" class="myBtn">Open Modal</button> -->
 
     <!-- <span class="spanDarkText">span</span>
     <span class="spanDarkText">span</span>

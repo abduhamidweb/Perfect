@@ -89,6 +89,47 @@ a {
     width: 100% !important;
   }
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: none;
+}
+
+/* directional buttons */
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* empty space "below" the progress bar */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* top-most layer of the progress bar not covered by the draggable scrolling element */
+::-webkit-scrollbar-track-piece {
+  background: none;
+}
+
+/* draggable scrolling element that resizes depending on the size of the scrollable element */
+::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 99px;
+  background-color: rgba(88, 89, 91, 0.2);
+  box-sizing: border-box;
+  background-clip: padding-box;
+  padding: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(88, 89, 91, 0.6);
+}
+
+/* the (usually) bottom corner of the scrollable element, where two scrollbars might meet */
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
 .header {
   background: transparent;
   position: absolute;
@@ -1492,6 +1533,119 @@ a {
   /* or 21px */
   letter-spacing: -0.02em;
   color: #07484a;
+}
+.special__container__row__col__left__cards {
+  margin-top: 25px;
+  height: 600px;
+  overflow-y: scroll;
+}
+.special__container__row__col__left__cards__see {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 115%;
+  /* identical to box height, or 21px */
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.special__container__row__col__left__cards__wrap {
+  padding-top: 40px;
+}
+.special__container__row__col__left__cards__wrap__card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.special__container__row__col__left__cards__wrap__card .as {
+  background: #e0f6f1;
+}
+.special__container__row__col__left__cards__wrap__card__text {
+  max-width: 393px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+}
+.special__container__row__col__left__cards__wrap__card__text__float {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special__container__row__col__left__cards__wrap__card__text__float h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height */
+  color: #07484a;
+}
+.special__container__row__col__left__cards__wrap__card__text__float span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 115%;
+  /* or 25px */
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
+.special__container__row__col__left__cards__wrap__card__star {
+  margin: 24px 0;
+  max-width: 112px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.special__container__row__col__left__cards__wrap__card__see {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115%;
+  /* or 18px */
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  color: #07484A;
+}
+.special__container__row__col__left__cards__cards {
+  width: 100%;
+  height: 332px;
+  margin-top: 32px;
+}
+.special__container__row__col__left__cards__cards .swiper {
+  width: 100%;
+  height: 100%;
+}
+.special__container__row__col__left__cards__cards .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+.special__container__row__col__left__cards__cards .swiper-slide .swiper-slide {
+  display: flex;
+  height: 148px;
+  width: 663px;
+  justify-content: space-between;
+}
+.special__container__row__col__left__cards__cards .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* The Modal (background) */

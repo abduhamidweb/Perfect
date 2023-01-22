@@ -117,6 +117,133 @@
               color: #07484a;
             }
           }
+          &__cards {
+            margin-top: 25px;
+            height: 600px;
+            overflow-y: scroll;
+            &__see {
+              font-family: 'Open Sans';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 115%;
+              /* identical to box height, or 21px */
+
+              letter-spacing: -0.02em;
+
+              color: #000000;
+            }
+            &__wrap {
+                padding-top: 40px;
+              &__card {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 24px;
+                .as{
+                  background: #e0f6f1;
+                }
+                &__text {
+                  max-width: 393px;
+                  width: 100%;
+                  border-radius: 10px;
+                  padding: 20px;
+
+                  &__float {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h3 {
+                      font-family: 'Open Sans';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 22px;
+                      line-height: 30px;
+                      /* identical to box height */
+
+                      color: #07484a;
+                    }
+                    span {
+                      font-family: 'Open Sans';
+                      font-style: normal;
+                      font-weight: 700;
+                      font-size: 22px;
+                      line-height: 115%;
+                      /* or 25px */
+
+                      letter-spacing: -0.02em;
+
+                      color: #07484a;
+                    }
+                  }
+                }
+                &__star{
+                    margin: 24px 0;
+                    max-width: 112px;
+                   display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+
+                }
+                &__see{
+                    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 115%;
+/* or 18px */
+
+letter-spacing: -0.02em;
+text-decoration-line: underline;
+
+color: #07484A;
+
+                }
+              }
+            }
+            &__cards{
+                width: 100%;
+                height: 332px;
+                margin-top: 32px;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+ 
+      .swiper-slide{
+display: flex;
+     height: 148px ;
+      width: 663px;
+justify-content: space-between;
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+            }
+          }
         }
       }
     }

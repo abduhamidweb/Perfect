@@ -19,12 +19,22 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  transition: all 0.1 ease;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+a {
+  cursor: pointer;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1619px !important;
   width: 100% !important;
+  position: relative;
 }
 
 .dark-mode {
@@ -34,45 +44,6 @@
 
 .dark-href {
   color: #ffffff;
-}
-
-/* The Modal (background) */
-.modalWindow {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .input-valid {
@@ -89,6 +60,12 @@
 
 .d-none {
   display: none !important;
+}
+
+.d-none2 {
+  transform: translateY(-1000px);
+  z-index: 1222;
+  background: #ffffff;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -116,7 +93,7 @@
   background: transparent;
   position: absolute;
   top: 0;
-  z-index: 111;
+  z-index: 111234;
   left: 0;
   right: 0;
 }
@@ -304,7 +281,7 @@
     background: transparent;
     position: absolute;
     top: 0;
-    z-index: 111;
+    z-index: 111234;
     left: 0;
     right: 0;
   }
@@ -386,6 +363,7 @@
     position: absolute;
     top: 0;
     z-index: 11;
+    transition: all 0.5s ease;
     background: #ffffff;
   }
   .header .header__modal__cloce {
@@ -955,13 +933,185 @@
   position: absolute;
   width: 100%;
   top: 0;
-  z-index: -1;
+  z-index: -134232;
   background-image: url("../../images/header.png");
 }
-.hero .hero__title {
+.hero__title {
   display: none;
 }
+.hero .hero__text {
+  height: 100vh;
+  max-width: 668px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  padding-top: 333.97px;
+  background: transparent;
+  border-radius: 0px;
+}
+.hero .hero__text h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484a;
+}
+.hero .hero__text p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  margin-top: 54px;
+  color: #07484a;
+}
+.hero .hero__text .hero__text__wrapper__shop {
+  background: #70908b;
+  border-radius: 10px;
+  margin-top: 54px;
+  padding: 20px 54.5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  border: transparent;
+  /* identical to box height */
+  cursor: pointer;
+  color: #fdfbf8;
+}
 
+@media only screen and (max-width: 768px) {
+  .hero {
+    position: relative;
+    height: 100vh;
+  }
+  .hero__bg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-image: url("../../images/header.png");
+  }
+  .hero__title {
+    display: none;
+  }
+  .hero .hero__text {
+    height: 100vh;
+    max-width: 668px;
+    position: absolute;
+    width: 100%;
+    padding-top: 333.97px;
+    z-index: 1;
+    background: transparent;
+    border-radius: 0px;
+  }
+  .hero .hero__text h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    /* or 129% */
+    color: #07484a;
+  }
+  .hero .hero__text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #07484a;
+  }
+  .hero .hero__text .hero__text__wrapper__shop {
+    background: #70908b;
+    border-radius: 10px;
+    margin-top: 54px;
+    padding: 16px 40px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border: transparent;
+    /* identical to box height */
+    cursor: pointer;
+    color: #fdfbf8;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hero {
+    position: relative;
+    height: 100vh;
+  }
+  .hero__bg {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-image: url("../../images/header.png");
+  }
+  .hero__title {
+    display: none;
+  }
+  .hero .hero__text {
+    height: 100vh;
+    max-width: 668px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 333.97px;
+    z-index: 1;
+    background: transparent;
+    border-radius: 0px;
+  }
+  .hero .hero__text h2 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 52px;
+    /* or 144% */
+    text-align: center;
+    color: #07484a;
+  }
+  .hero .hero__text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    /* or 128% */
+    text-align: center;
+    color: #07484a;
+  }
+  .hero .hero__text .hero__text__wrapper__shop {
+    background: #70908b;
+    border-radius: 10px;
+    margin-top: 54px;
+    padding: 16px 40px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    border: transparent;
+    /* identical to box height */
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fdfbf8;
+  }
+}
 @font-face {
   font-family: "myFonts";
   src: url("../fonts/Roboto-Bold.ttf");
@@ -1235,6 +1385,128 @@
     margin-top: 40px;
   }
 }
+/* The Modal (background) */
+.modalWindow {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1111111 !important;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.formRegister {
+  height: 594px;
+  max-width: 966px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 50px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.formRegister .formRegister__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formRegister .formRegister__title h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  /* identical to box height */
+  color: #000000;
+}
+.formRegister .formRegister__title span {
+  background: #f5f5f5;
+  width: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  border-radius: 50%;
+}
+.formRegister .formRegister__inputWrapper {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 41px 68px;
+  display: flex;
+  align-items: center;
+}
+.formRegister .formRegister__inputWrapper img {
+  position: relative;
+  top: -3px;
+}
+.formRegister .formRegister__inputWrapper input {
+  padding: 0px 35px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #000000;
+}
+.formRegister .formRegister__inputWrapper input::placeholder {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #000000;
+}
+.formRegister .btnSubmit {
+  padding: 41px 0;
+  background: #70908b;
+  border-radius: 30px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: "myFonts";
   src: url("../fonts/Roboto-Bold.ttf");

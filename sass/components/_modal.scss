@@ -1,0 +1,124 @@
+/* The Modal (background) */
+.modalWindow {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  // overflow: auto; /* Enable scroll if needed */
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1111111 !important;
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+.formRegister {
+  height: 594px;
+  max-width: 966px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 50px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .formRegister__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+    span {
+      background: #f5f5f5;
+      width: 54px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 54px;
+      border-radius: 50%;
+    }
+  }
+  .formRegister__inputWrapper {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 41px 68px;
+    display: flex;
+    align-items: center;
+    img {
+      position: relative;
+      top: -3px;
+    }
+    input {
+      padding: 0px 35px;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      /* identical to box height */
+
+      color: #000000;
+      &::placeholder {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        /* identical to box height */
+
+        color: #000000;
+      }
+    }
+  }
+  .btnSubmit {
+    padding: 41px 0;
+    background: #70908b;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

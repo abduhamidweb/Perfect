@@ -2,7 +2,7 @@
   background: transparent;
   position: absolute;
   top: 0;
-  z-index: 111;
+  z-index: 111234;
   left: 0;
   right: 0;
   &__nav {
@@ -14,7 +14,7 @@
       max-width: 144px;
       width: 100%;
       max-height: 36px;
-      img{
+      img {
         width: 100%;
         height: 100%;
       }
@@ -93,6 +93,7 @@
     position: absolute;
     top: 0;
     z-index: 11;
+
     background: #ffffff;
     &__cloce {
       padding: 30px 0;
@@ -205,7 +206,7 @@
     background: transparent;
     position: absolute;
     top: 0;
-    z-index: 111;
+    z-index: 111234;
     left: 0;
     right: 0;
     &__nav {
@@ -292,6 +293,7 @@
       position: absolute;
       top: 0;
       z-index: 11;
+      transition: all 0.5s ease;
       background: #ffffff;
       &__cloce {
         padding: 30px 0;
@@ -583,11 +585,11 @@
   }
 }
 @media only screen and (max-width: 320px) {
-    .nav__list__menu {
+  .nav__list__menu {
     display: block;
     order: -1;
   }
-    .header {
+  .header {
     background: transparent;
     position: absolute;
     top: 0;
@@ -602,7 +604,7 @@
       .nav__logo {
         max-width: 104px;
         width: 100%;
-        
+
         max-height: 26px;
       }
       .nav__list {
@@ -670,11 +672,11 @@
         align-items: center;
         justify-content: space-between;
         min-height: 27px;
-a{
-  img{
-    width: 21px;
-  }
-}
+        a {
+          img {
+            width: 21px;
+          }
+        }
       }
     }
     .header__modal {
@@ -779,5 +781,3 @@ a{
     }
   }
 }
-
-

@@ -1,11 +1,11 @@
 $('.nav__list__menu__button').addEventListener("click", () => {
-  $('.header__modal').classList.remove('d-none')
+  $('.header__modal').classList.remove('d-none2')
   $('.header__modal').classList.add('d-block')
 })
 $('.header__modal__cloce').addEventListener(
   'click',
   () => {
-  $('.header__modal').classList.add('d-none')
+  $('.header__modal').classList.add('d-none2')
   $('.header__modal').classList.remove('d-block')
   }
 )
@@ -15,29 +15,33 @@ $('.header__modal__cloce').addEventListener(
 
 // console.log($("h1"));
 // Modal window start
-// let modal = document.getElementById('myModal')
+let modal = document.getElementById('myModal')
 
 
 
 
 // let btn = document.getElementById('myBtn')
+let btn2 = document.getElementById('myBtn')
+let span = document.getElementsByClassName('close')[0]
 
-// let span = document.getElementsByClassName('close')[0]
+btn2.addEventListener("click", ()=>{
 
-// btn.onclick = function () {
-//   modal.style.display = 'block'
-// }
+  modal.classList.add("block")
+})
+btn2.onclick = function () {
+  modal.style.display = 'block'
+}
 
-// span.onclick = function () {
-//   modal.style.display = 'none'
-// }
+span.onclick = function () {
+  modal.style.display = 'none'
+}
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = 'none'
-//   }
-// }
-// Dark mode start
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
+}
+// Dark mode started
 // Input validator function
 // let form = document.querySelector('#formRegister')
 // let elEmail = $('#email')
@@ -77,7 +81,7 @@ $('.header__modal__cloce').addEventListener(
 //   if (elEmail.value.length > 0 && elNames.value.length > 0) {
 //     localStorage.setItem('validation-email', elEmail.value)
 //     localStorage.setItem('validation-name', elNames.value)
-//     alert('succsess full add ' + elNames.value)
+//     // alert('succsess full add ' + elNames.value)
 //     elEmail.value = ''
 //     elNames.value = ''
 //     elEmail.classList.remove('input-valid')

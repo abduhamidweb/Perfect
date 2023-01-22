@@ -1,0 +1,5 @@
+1.font add.
+2.modal add.
+3. darkMode add.
+4. plugin add. */ plugi haqiqiy jquery kutub xonasi ulandi.
+5.MDbootstrap and defoult bootstrap add.

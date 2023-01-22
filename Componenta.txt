@@ -1,0 +1,16 @@
+  /////////////////////////////////////////////////////////////////////////////
+  1.Modal oynani ishlatish ucun 
+    <div id="myModal" class="modalWindow">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Modal content goes here</p>
+        </div>
+    </div>
+    <button id="myBtn">Open Modal</button>
+    ////////////////////////////////////////////////////////////////////////////
+    2.DarkMode uchun
+// <button id="dark-mode-btn">Toggle Dark Mode</button> hammsi manashu btn ga bog'liq
+    ////////////////////////////////////////////////////////////////////////////
+3.Plugin $(bu yerga oladigan malumotlarizni yozing misol uchun h2 yoki p "agar 2 ta h2 bo'lsa ham shunday yoziladi.")
+    ////////////////////////////////////////////////////////////////////////////
+

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'myFonts';
+  src: url('../fonts/Roboto-Bold.ttf'); //*misol uchun ulab qo'ydim;
+}
+@font-face {
+  font-family: 'myFonts1';
+  src: url('../fonts/Roboto-Bold.ttf'); //*misol uchun ulab qo'ydim;
+}
+$base-color: #c6538c;
+
+// Mixsen Usuli
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//     -moz-border-radius: $radius;
+//     -ms-border-radius: $radius;
+//     border-radius: $radius;
+// }
+
+// .box {
+//     @include border-radius(10px);
+// }
+
+// Function usuli
+// @function calculate-width($n) {
+//     @return $n * 10px;
+// }
+
+// .box {
+//     width: calculate-width(5);
+// }

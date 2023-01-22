@@ -1,0 +1,8 @@
+1:) => hamma matnli elementlarni yozishda faqat  h2 h3 p span a  dan foydalanish kerak va ularga
+ elementNomi va unga qo'shib DarkText classi qo'shilsin. 
+2:) => hamma classlar bem usulida bo'lishi shart.
+3:) => hamma button da .btn cllass bo'lishi shart.
+4:) => har bir elementlarni o'rab turgan divga .darkTheme class qo'shilsin.
+5:) => ko'p qaytariladigan stylelar variablega olinib ishlatilsin.
+6:) => hamma claslar nesting usulida bo'lishi shart.
+7:) => containerni styleini to'g'ri berish kerak.

@@ -1385,6 +1385,115 @@ a {
     margin-top: 40px;
   }
 }
+.special__container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.special__container__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 96px;
+  /* identical to box height */
+  text-align: center;
+  color: #07484a;
+  margin-bottom: 103px;
+}
+.special__container__row {
+  display: flex;
+  justify-content: space-between;
+}
+.special__container__row__col {
+  width: 45%;
+  height: 768px;
+}
+.special__container__row__col__img img {
+  width: 100%;
+  height: 100%;
+}
+.special__container__row__col__text {
+  margin-top: 32px;
+  position: relative;
+}
+.special__container__row__col__text__chuck {
+  max-width: 347px;
+  width: 100%;
+}
+.special__container__row__col__text__chuck h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  /* identical to box height */
+  color: #07484a;
+}
+.special__container__row__col__text__chuck__star {
+  display: flex;
+  justify-content: space-between;
+  max-width: 248px;
+  margin-top: 28px;
+}
+.special__container__row__col__text__chuck__price {
+  margin-top: 28px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  /* or 32px */
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
+.special__container__row__col__text__btn {
+  height: 66px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 196px;
+  border-radius: 10px;
+  padding: 16px 24px 16px 24px;
+  background: #70908b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: transparent;
+}
+.special__container__row__col__text__btn span {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #fdfbf8;
+}
+.special__container__row__col__text__btn .img {
+  margin-left: 20px;
+}
+.special__container__row__col__left__text h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+  /* or 28px */
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
+.special__container__row__col__left__text p {
+  margin-top: 24px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 115%;
+  /* or 21px */
+  letter-spacing: -0.02em;
+  color: #07484a;
+}
+
 /* The Modal (background) */
 .modalWindow {
   display: none; /* Hidden by default */
@@ -1546,6 +1655,15 @@ a {
   width: 80%;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.footer .footerWrap__uls__wrap__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #07484a;
 }
 .footer .footerWrap__box1_firstLi {
   margin-top: 20px;

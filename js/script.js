@@ -13,6 +13,9 @@ $('.header__modal__cloce').addEventListener(
 // Modal window start
 // let modal = document.getElementById('myModal')
 
+
+
+
 // let btn = document.getElementById('myBtn')
 
 // let span = document.getElementsByClassName('close')[0]

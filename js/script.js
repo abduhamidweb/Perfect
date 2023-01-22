@@ -9,6 +9,10 @@ $('.header__modal__cloce').addEventListener(
   $('.header__modal').classList.remove('d-block')
   }
 )
+
+
+
+
 // console.log($("h1"));
 // Modal window start
 // let modal = document.getElementById('myModal')

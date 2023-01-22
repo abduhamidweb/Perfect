@@ -173,6 +173,9 @@ let db = [
 
   //   ==================kitchen
 
+
+
+  
   {
     roomImg: roomImg1,
     categoryTitle: "Kitchen",

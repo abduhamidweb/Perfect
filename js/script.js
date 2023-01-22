@@ -41,6 +41,51 @@ window.onclick = function (event) {
     modal.style.display = 'none'
   }
 }
+
+
+
+// let son = 0;
+
+// function slider() {
+//   if (son < 0) {
+//     son = $(".list-item").length - 1;
+//   }
+//   if (son > $(".list-item").length - 1) {
+//     son = 0;
+//   }
+
+//   $(".list").style.transform = `translateX(-${son * 1002}px)`
+// }
+
+let up = document.querySelector("#uparrow")
+let down = document.querySelector("#downarrow")
+let sliderWrap = document.querySelector(".swiper-wrapper")
+let swiperSlide = document.querySelectorAll(".swiper-slide")
+
+let son = 0;
+
+function slider() {
+  if (son < 0) {
+      son = swiperSlide.length-1
+  }
+  if (son > swiperSlide.length-1) {
+    son = 0;
+  }
+   sliderWrap.style.transform = `translateX(-${son*360}px)`
+}
+up.addEventListener("click", () => {
+  son--
+  slider()
+})
+down.addEventListener("click", () => {
+  son++
+  slider()
+})
+
+
+
+  // $(".list").style.transform = `translateX(-${son * 1002}px)`
+
 // Dark mode started
 // Input validator function
 // let form = document.querySelector('#formRegister')

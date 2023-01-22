@@ -1,0 +1,146 @@
+@import './vareble';
+.footer {
+  padding: 100px 0px 32px 0px;
+
+  &__text {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $benefestColor;
+    padding-top: 69px;
+  }
+  .footerWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__uls {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &__wrap__text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        color: #07484a;
+      }
+    }
+
+    &__box1 {
+      &_firstLi {
+        margin-top: 20px;
+
+        &_nets {
+          display: flex;
+          // margin-top: 20px;
+          gap: 36px;
+
+          i {
+            font-size: 25px;
+            color: $benefestColor;
+          }
+        }
+      }
+    }
+    &__box2 {
+      width: 20%;
+    }
+
+    ul {
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $benefestColor;
+
+      li {
+        a {
+          font-family: Open Sans;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 25px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: $benefestColor;
+          text-decoration: none;
+          line-height: 42px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    .footerWrap {
+      &__box2 {
+        width: 30%;
+      }
+      &__uls {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px;
+    .footerWrap {
+      flex-direction: column;
+
+      &__uls {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        ul {
+          width: 50% !important;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .address {
+    width: 190px;
+  }
+  .footer {
+    padding: 10px;
+    &__text {
+      text-align: center;
+    }
+
+    .footerWrap {
+      flex-direction: column;
+
+      &__uls {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+
+        ul {
+          width: 50%;
+          margin-top: 40px;
+
+          li {
+            a {
+              font-size: 14px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

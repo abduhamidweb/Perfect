@@ -173,6 +173,9 @@ var db = [
 
   //   ==================kitchen
 
+
+
+  
   {
     "roomImg": "../images3/romIm1.jpg",
     "categoryTitle": "Kitchen",

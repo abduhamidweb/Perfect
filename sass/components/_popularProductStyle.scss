@@ -1,0 +1,66 @@
+.popularProductTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 85px;
+    text-align: center;
+    color: $txtColor;
+    margin-top: 100px;
+    margin-bottom: 54px;
+}
+
+.popularProducts {
+    position: relative;
+    .popularSecBg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+.popularPrWrapp {
+    margin-bottom: 100px;
+    display: flex;
+
+    overflow-x: scroll;
+
+    
+    .popularPrCard {
+        background-color: #caf3e5;
+        width: 630px;
+    
+        padding: 64px 40px 60px 40px;
+        border-radius: 16px;
+        margin-right: 32px;
+        .topImgWrapp {
+            text-align: center;
+        }
+        &-popularCardTitle {
+            margin: 40px 0 10px 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            font-family: $openFont;
+            color: #70908b;
+        }
+        &-popularCarDesc {
+            margin: 0px 0 20px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            font-family: $openFont;
+            color: #70908b;
+        }
+        &-popularCarPrice {
+            margin: 0px 0 20px 0;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color: #70908b;
+            font-family: $openFont;
+        }
+    }
+}

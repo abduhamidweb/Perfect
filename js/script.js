@@ -9,6 +9,10 @@ $('.header__modal__cloce').addEventListener(
   $('.header__modal').classList.remove('d-block')
   }
 )
+
+
+
+
 // console.log($("h1"));
 // Modal window start
 // let modal = document.getElementById('myModal')
@@ -51,6 +55,10 @@ $('.header__modal__cloce').addEventListener(
 // }
 let modal = document.getElementById('myModal')
 
+
+
+
+// let btn = document.getElementById('myBtn')
 let btn2 = document.getElementById('myBtn')
 let span = document.getElementsByClassName('close')[0]
 
@@ -237,3 +245,29 @@ createCategoryCards("Bedroom")
 //   document.getElementById(cityName).style.display = "block";
 //   evt.currentTarget.className += " active";
 // }
+
+// ===============================Popular card create
+
+db.map((el)=>{
+let popularCard= crElement("div", "popularPrCard", `
+<div class="topImgWrapp">
+        <img src="${el.prImg}" title="chair" class="popularCardImg">
+    </div>
+<h4 class="popularPrCard-popularCardTitle">${el.prTitle}</h4>
+<p class="popularPrCard-popularCarDesc">${el.prDesc}</p>
+<p class="popularPrCard-popularCarPrice">${el.prPrice}</p>
+
+
+
+`);
+
+$(".popularPrWrapp").appendChild(popularCard);
+
+
+})
+
+
+
+
+
+

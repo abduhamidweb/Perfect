@@ -1,9 +1,9 @@
 .hero {
-position: relative;
-height: 100vh;
+  position: relative;
+  height: 100vh;
   &__bg {
-      height: 100vh;
-  width: 100%;
+    height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -12,7 +12,7 @@ height: 100vh;
     z-index: -1;
     background-image: url('../../images/header.png');
   }
-  .hero__title{
-        display: none;
+  .hero__title {
+    display: none;
   }
 }

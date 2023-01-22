@@ -61,6 +61,12 @@
 .input-field {
   border: 1px solid red;
 }
+.d-block{
+  display: block !important;
+}
+.d-none{
+  display: none !important;
+}
 @media only screen and (max-width: 1024px) {
   .container {
     margin: 0 auto;

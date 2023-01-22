@@ -1,3 +1,14 @@
+$('.nav__list__menu__button').addEventListener("click", () => {
+  $('.header__modal').classList.remove('d-none')
+  $('.header__modal').classList.add('d-block')
+})
+$('.header__modal__cloce').addEventListener(
+  'click',
+  () => {
+  $('.header__modal').classList.add('d-none')
+  $('.header__modal').classList.remove('d-block')
+  }
+)
 // console.log($("h1"));
 // Modal window start
 // let modal = document.getElementById('myModal')
@@ -20,26 +31,6 @@
 //   }
 // }
 // Dark mode start
-const darkModeBtn = document.getElementById('dark-mode-btn')
-darkModeBtn.addEventListener('click', function () {
-    document.body.classList.toggle('dark-mode')
-
-
-
-})
-
-darkModeBtn.addEventListener('click', function () {
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('dark-mode', 'on')
-  } else {
-    localStorage.setItem('dark-mode', 'off')
-  }
-})
-
-if (localStorage.getItem('dark-mode') === 'on') {
-  document.body.classList.add('dark-mode')
-  darkModeBtn.innerHTML = 'Light Mode'
-}
 // Input validator function
 // let form = document.querySelector('#formRegister')
 // let elEmail = $('#email')

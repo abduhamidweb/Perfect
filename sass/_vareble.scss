@@ -6,8 +6,17 @@
   font-family: 'myFonts1';
   src: url('../fonts/Roboto-Bold.ttf'); //*misol uchun ulab qo'ydim;
 }
+@font-face {
+  font-family: 'play';
+  src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+  font-family: 'open sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
 $base-color: #c6538c;
-
+$playFont: 'play';
+$openFont: 'open sans';
 // Mixsen Usuli
 // @mixin border-radius($radius) {
 //     -webkit-border-radius: $radius;

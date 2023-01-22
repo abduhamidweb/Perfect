@@ -6,6 +6,14 @@
   font-family: "myFonts1";
   src: url("../fonts/Roboto-Bold.ttf");
 }
+@font-face {
+  font-family: "play";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +22,7 @@
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1619px !important;
   width: 100% !important;
 }
@@ -74,6 +83,66 @@
   border: 1px solid red;
 }
 
+.header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 111;
+  left: 0;
+  right: 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 88px;
+}
+.header__nav .nav__logo {
+  max-width: 144px;
+  width: 100%;
+  max-height: 36px;
+}
+.header__nav .nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  max-width: 606px;
+  width: 100%;
+  justify-content: space-between;
+  min-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+.header__nav .nav__list__item__link {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 132.9%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.header__nav .nav__list__item__link:hover {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 132.9%;
+  /* identical to box height, or 27px */
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.header__nav .nav__icons {
+  max-width: 196px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 27px;
+}
+
 @font-face {
   font-family: "myFonts";
   src: url("../fonts/Roboto-Bold.ttf");
@@ -81,6 +150,14 @@
 @font-face {
   font-family: "myFonts1";
   src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "play";
+  src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "open sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 .section-benefits {
   background: #E0EFF6;
@@ -129,6 +206,17 @@
   letter-spacing: 0em;
   text-align: center;
   padding: 5px;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url("../../images/header.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 form {

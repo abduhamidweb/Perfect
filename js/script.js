@@ -1,3 +1,4 @@
+console.log(db)
 // console.log($("h1"));
 // Modal window start
 // let modal = document.getElementById('myModal')
@@ -20,26 +21,26 @@
 //   }
 // }
 // Dark mode start
-const darkModeBtn = document.getElementById('dark-mode-btn')
-darkModeBtn.addEventListener('click', function () {
-    document.body.classList.toggle('dark-mode')
+// const darkModeBtn = document.getElementById('dark-mode-btn')
+// darkModeBtn.addEventListener('click', function () {
+//     document.body.classList.toggle('dark-mode')
 
 
 
-})
+// })
 
-darkModeBtn.addEventListener('click', function () {
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('dark-mode', 'on')
-  } else {
-    localStorage.setItem('dark-mode', 'off')
-  }
-})
+// darkModeBtn.addEventListener('click', function () {
+//   if (document.body.classList.contains('dark-mode')) {
+//     localStorage.setItem('dark-mode', 'on')
+//   } else {
+//     localStorage.setItem('dark-mode', 'off')
+//   }
+// })
 
-if (localStorage.getItem('dark-mode') === 'on') {
-  document.body.classList.add('dark-mode')
-  darkModeBtn.innerHTML = 'Light Mode'
-}
+// if (localStorage.getItem('dark-mode') === 'on') {
+//   document.body.classList.add('dark-mode')
+//   darkModeBtn.innerHTML = 'Light Mode'
+// }
 // Input validator function
 // let form = document.querySelector('#formRegister')
 // let elEmail = $('#email')
@@ -124,3 +125,13 @@ if (localStorage.getItem('dark-mode') === 'on') {
     //     item.classList.remove('aDarkText')
     //   })
     // }
+
+let categorLinkWrapp =$(".catLinkUl");
+// console.log(categorLinkWrapp);
+
+
+
+
+
+
+

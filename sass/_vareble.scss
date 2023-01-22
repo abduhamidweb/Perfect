@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'myFonts';
-  src: url('../fonts/Roboto-Bold.ttf'); //*misol uchun ulab qo'ydim;
+  src: url('../fonts/Roboto-Regular.ttf'); //*misol uchun ulab qo'ydim;
 }
+$rFont:"myFonts";
 @font-face {
   font-family: 'myFonts1';
   src: url('../fonts/Roboto-Bold.ttf'); //*misol uchun ulab qo'ydim;

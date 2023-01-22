@@ -1,6 +1,6 @@
 @font-face {
   font-family: "myFonts";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "myFonts1";
@@ -26,6 +26,8 @@
   max-width: 1619px !important;
   width: 100% !important;
   margin: 0 auto !important;
+  max-width: 1619px !important;
+  width: 100% !important;
 }
 
 .dark-mode {
@@ -84,6 +86,27 @@
   border: 1px solid red;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    max-width: 996px !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 728px !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    margin: 0 auto;
+    max-width: 288px !important;
+    width: 100% !important;
+  }
+}
 .header {
   background: transparent;
   position: absolute;
@@ -167,7 +190,7 @@
 
 @media only screen and (max-width: 992px) {
   .media__width__992 {
-    display: none;
+    display: none !important;
   }
 }
 .categorySecWrapp .categoryTitle {
@@ -201,6 +224,21 @@
   font-size: 20px;
   line-height: 23px;
 }
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .catLinkUl .catLink {
+  padding: 28px 0;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .catLinkUl .catLink .catLinkText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "myFonts";
+  color: #07484A;
+}
 
 .hero {
   position: relative;
@@ -216,6 +254,9 @@
   top: 0;
   z-index: -1;
   background-image: url("../../images/header.png");
+}
+.hero .hero__title {
+  display: none;
 }
 
 form {

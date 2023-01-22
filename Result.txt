@@ -3,3 +3,40 @@
 3. darkMode add.
 4. plugin add. */ plugi haqiqiy jquery kutub xonasi ulandi.
 5.MDbootstrap and defoult bootstrap add.
+
+
+
+
+
+
+
+        <section class="darkTheme">
+            <!-- section 1   boshqalarning codega bitta probil ham
+                 tashlamang  va containerni sectionni ichiga yozing
+                  containerga style bermang-->
+      
+<div class="container">
+    <div class="categorySecWrapp">
+        <h2 class="categoryTitle">Explore by Category</h2>
+
+        <div class="categorySecWrapp-leftCatInfo">
+          <div class="searchInptWrapp">
+            <img src="./images3/searchIcon.svg" alt="sarch-category-icon" title="search-category">
+            <input type="text" placeholder="Search" class="categorySearch">
+          </div>
+
+<div class="categoryLinksWrapp">
+<ul class="catLinkUl">
+<li class="catLink">
+  <p class="catLinkText">
+    Bedroom
+  </p>
+</li>
+</ul>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</section>

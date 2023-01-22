@@ -8,11 +8,204 @@
     background-position: center;
     position: absolute;
     width: 100%;
+
     top: 0;
-    z-index: -1;
+    z-index: -134232;
     background-image: url('../../images/header.png');
   }
-  .hero__title {
+  &__title {
     display: none;
+  }
+  .hero__text {
+    height: 100vh;
+    max-width: 668px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    padding-top: 333.97px;
+    // left: 100px;
+    background: transparent;
+    border-radius: 0px;
+    h2 {
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 85px;
+
+      color: #07484a;
+    }
+    p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      margin-top: 54px;
+      color: #07484a;
+    }
+    .hero__text__wrapper__shop {
+      background: #70908b;
+      border-radius: 10px;
+      margin-top: 54px;
+
+      padding: 20px 54.5px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      border: transparent;
+      /* identical to box height */
+
+      cursor: pointer;
+      color: #fdfbf8;
+    }
+    // transform: translate(-50%, -50%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    position: relative;
+    height: 100vh;
+    &__bg {
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      width: 100%;
+
+      top: 0;
+      z-index: -1;
+      background-image: url('../../images/header.png');
+    }
+    &__title {
+      display: none;
+    }
+    .hero__text {
+      height: 100vh;
+      max-width: 668px;
+      position: absolute;
+      width: 100%;
+      padding-top: 333.97px;
+      z-index: 1;
+      // left: 100px;
+      background: transparent;
+      border-radius: 0px;
+      h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 62px;
+        /* or 129% */
+
+        color: #07484a;
+      }
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+
+        color: #07484a;
+      }
+      .hero__text__wrapper__shop {
+        background: #70908b;
+        border-radius: 10px;
+        margin-top: 54px;
+        padding: 16px 40px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        border: transparent;
+        /* identical to box height */
+
+        cursor: pointer;
+        color: #fdfbf8;
+      }
+      // transform: translate(-50%, -50%);
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hero {
+    position: relative;
+    height: 100vh;
+    &__bg {
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      width: 100%;
+
+      top: 0;
+      z-index: -1;
+      background-image: url('../../images/header.png');
+    }
+    &__title {
+      display: none;
+    }
+    .hero__text {
+      height: 100vh;
+      max-width: 668px;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      padding-top: 333.97px;
+      z-index: 1;
+      // left: 100px;
+      background: transparent;
+      border-radius: 0px;
+      h2 {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        /* or 144% */
+
+        text-align: center;
+
+        color: #07484a;
+      }
+      p {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        /* or 128% */
+
+        text-align: center;
+
+        color: #07484a;
+      }
+      .hero__text__wrapper__shop {
+        background: #70908b;
+        border-radius: 10px;
+        margin-top: 54px;
+        padding: 16px 40px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        border: transparent;
+        /* identical to box height */
+
+        cursor: pointer;
+        // margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        color: #fdfbf8;
+      }
+      // transform: translate(-50%, -50%);
+    }
   }
 }

@@ -1,11 +1,11 @@
 $('.nav__list__menu__button').addEventListener("click", () => {
-  $('.header__modal').classList.remove('d-none')
+  $('.header__modal').classList.remove('d-none2')
   $('.header__modal').classList.add('d-block')
 })
 $('.header__modal__cloce').addEventListener(
   'click',
   () => {
-  $('.header__modal').classList.add('d-none')
+  $('.header__modal').classList.add('d-none2')
   $('.header__modal').classList.remove('d-block')
   }
 )

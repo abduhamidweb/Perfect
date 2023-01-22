@@ -23,7 +23,7 @@
 
         &__cards{
             display: flex;
-            gap: 10px;
+            // gap: 10px;
             width: 80%;
             justify-content: space-between;
             margin:114.16px  auto;
@@ -31,7 +31,7 @@
             &_card{
                 color: $benefestColor;
                 // background-color: red;
-                max-width: 287px;
+                max-width: 314px;
                 width: 100%;
                 text-align: center;
                 
@@ -57,4 +57,72 @@
         }
     }
 }
+@media (max-width:768px){
+    .benefits{
+        width: 100%;
 
+
+        &__title{
+            font-family: Playfair Display;
+            font-size: 48px !important;
+            font-weight: 700;
+
+        }
+        &__cards{
+            width: 100% !important;
+
+
+            &_card{
+                max-width: 212px !important;
+                width: 100%;
+                border-radius: 30px;
+
+                h3{
+                    font-size: 24px !important;
+                }
+                p{
+                    font-size: 18px !important;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width:320px) {
+    .benefits {
+        width: 100%;
+
+
+        &__title {
+          font-family: Playfair Display;
+          font-size: 28px !important;
+          font-weight: 700;
+          text-align: center;
+
+
+        }
+
+        &__cards {
+            width: 100% !important;
+            flex-direction: column;
+            align-items: center;
+
+
+            &_card {
+                max-width: 212px !important;
+                width: 100%;
+                border-radius: 30px;
+                margin-top: 60px;
+
+                h3 {
+                    font-size: 24px !important;
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+
+            }
+        }
+    }
+}

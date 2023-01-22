@@ -1,3 +1,14 @@
+$('.nav__list__menu__button').addEventListener("click", () => {
+  $('.header__modal').classList.remove('d-none2')
+  $('.header__modal').classList.add('d-block')
+})
+$('.header__modal__cloce').addEventListener(
+  'click',
+  () => {
+  $('.header__modal').classList.add('d-none2')
+  $('.header__modal').classList.remove('d-block')
+  }
+)
 // console.log($("h1"));
 // Modal window start
 // let modal = document.getElementById('myModal')
@@ -38,6 +49,29 @@
 //   document.body.classList.add('dark-mode')
 //   darkModeBtn.innerHTML = 'Light Mode'
 // }
+let modal = document.getElementById('myModal')
+
+let btn2 = document.getElementById('myBtn')
+let span = document.getElementsByClassName('close')[0]
+
+btn2.addEventListener("click", ()=>{
+
+  modal.classList.add("block")
+})
+btn2.onclick = function () {
+  modal.style.display = 'block'
+}
+
+span.onclick = function () {
+  modal.style.display = 'none'
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
+}
+// Dark mode started
 // Input validator function
 // let form = document.querySelector('#formRegister')
 // let elEmail = $('#email')
@@ -77,7 +111,7 @@
 //   if (elEmail.value.length > 0 && elNames.value.length > 0) {
 //     localStorage.setItem('validation-email', elEmail.value)
 //     localStorage.setItem('validation-name', elNames.value)
-//     alert('succsess full add ' + elNames.value)
+//     // alert('succsess full add ' + elNames.value)
 //     elEmail.value = ''
 //     elNames.value = ''
 //     elEmail.classList.remove('input-valid')

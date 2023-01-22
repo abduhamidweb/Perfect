@@ -33,7 +33,7 @@ window.onclick = function (event) {
     modal.style.display = 'none'
   }
 }
-// Dark mode start
+// Dark mode started
 // Input validator function
 // let form = document.querySelector('#formRegister')
 // let elEmail = $('#email')

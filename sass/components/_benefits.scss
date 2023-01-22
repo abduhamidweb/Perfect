@@ -1,21 +1,62 @@
+@import "../vareble";
 .section-benefits{
     background: #E0EFF6;
-    // padding: 100px;
+    display: flex;
+    justify-content:center ;
+    padding: 100px 0;
+
+
 
     .benefits{
         display: flex;
         flex-direction: column;
-        align-items: center;
+    // align-items: center !important;
+
+
+        &__title{
+            font-family: Playfair Display;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 85px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $benefestColor;
+        }
 
         &__cards{
             display: flex;
+            gap: 10px;
+            width: 80%;
+            justify-content: space-between;
+            margin:114.16px  auto;
 
             &_card{
-                width: 281px;
-                font-size: 24px;
-                font-weight: 400;
+                color: $benefestColor;
+                // background-color: red;
+                max-width: 287px;
+                width: 100%;
                 text-align: center;
+                
+                h3{
+                    padding-top: 32px;
+                    font-family: Playfair Display;
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    letter-spacing: 0em;
+                }
+
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 33px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    padding: 5px;
+
+                }
             }
         }
     }
 }
+

@@ -74,22 +74,61 @@
   border: 1px solid red;
 }
 
+@font-face {
+  font-family: "myFonts";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "myFonts1";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
 .section-benefits {
   background: #E0EFF6;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
 }
 .section-benefits .benefits {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.section-benefits .benefits__title {
+  font-family: Playfair Display;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 85px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #07484A;
 }
 .section-benefits .benefits__cards {
   display: flex;
+  gap: 10px;
+  width: 80%;
+  justify-content: space-between;
+  margin: 114.16px auto;
 }
 .section-benefits .benefits__cards_card {
-  width: 281px;
+  color: #07484A;
+  max-width: 287px;
+  width: 100%;
+  text-align: center;
+}
+.section-benefits .benefits__cards_card h3 {
+  padding-top: 32px;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+.section-benefits .benefits__cards_card p {
   font-size: 24px;
   font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
   text-align: center;
+  padding: 5px;
 }
 
 form {

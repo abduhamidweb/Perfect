@@ -1,22 +1,20 @@
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
 }
-.container{
+.container {
   margin: 0 auto;
-max-width: 1619px !important;
-width: 100% !important;
+  max-width: 1619px !important;
+  width: 100% !important;
 }
 
 .dark-mode {
   background-color: #333333;
   color: #ffffff;
 }
-.dark-href{
+.dark-href {
   color: #ffffff;
 }
 /* The Modal (background) */
@@ -62,4 +60,25 @@ width: 100% !important;
 }
 .input-field {
   border: 1px solid red;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    max-width: 996px !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 728px !important;
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container {
+    margin: 0 auto;
+    max-width: 288px !important;
+    width: 100% !important;
+  }
 }

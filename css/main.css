@@ -16,6 +16,7 @@
 .container {
   max-width: 1619px !important;
   width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .dark-mode {
@@ -72,6 +73,38 @@
 
 .input-field {
   border: 1px solid red;
+}
+
+.categorySecWrapp {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484A;
+  text-align: center;
+  margin: 100px 0 100px 0;
+}
+.categorySecWrapp-leftCatInfo {
+  display: flex;
+  flex-direction: column;
+}
+.categorySecWrapp-leftCatInfo .searchInptWrapp {
+  background-color: #F0F0F0;
+  width: 349px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 26px 32px;
+  margin-bottom: 106px;
+}
+.categorySecWrapp-leftCatInfo .searchInptWrapp .categorySearch {
+  border: none;
+  outline: none;
+  margin-left: 18px;
+  background: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
 }
 
 form {

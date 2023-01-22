@@ -15,6 +15,44 @@ $('.header__modal__cloce').addEventListener(
 
 // console.log($("h1"));
 // Modal window start
+// let modal = document.getElementById('myModal')
+
+// let btn = document.getElementById('myBtn')
+
+// let span = document.getElementsByClassName('close')[0]
+
+// btn.onclick = function () {
+//   modal.style.display = 'block'
+// }
+
+// span.onclick = function () {
+//   modal.style.display = 'none'
+// }
+
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = 'none'
+//   }
+// }
+// Dark mode start
+// const darkModeBtn = document.getElementById('dark-mode-btn')
+// darkModeBtn.addEventListener('click', function () {
+//     document.body.classList.toggle('dark-mode')
+
+// })
+
+// darkModeBtn.addEventListener('click', function () {
+//   if (document.body.classList.contains('dark-mode')) {
+//     localStorage.setItem('dark-mode', 'on')
+//   } else {
+//     localStorage.setItem('dark-mode', 'off')
+//   }
+// })
+
+// if (localStorage.getItem('dark-mode') === 'on') {
+//   document.body.classList.add('dark-mode')
+//   darkModeBtn.innerHTML = 'Light Mode'
+// }
 let modal = document.getElementById('myModal')
 
 
@@ -91,38 +129,145 @@ window.onclick = function (event) {
 //   }
 // })
 
-
 // ochilmasin negadir ishlamayabdi.
-    // a.forEach((item) => {
-    //   console.log(item)
-    //   item.classList.add('spanDarkText')
-    // })
-    // $a('.h2DarkText').forEach((item) => {
-    //   item.classList.add('h2DarkText')
-    // })
-    // $a('.h3DarkText').forEach((item) => {
-    //   item.classList.add('h3DarkText')
-    // })
-    // $a('.pDarkText').forEach((item) => {
-    //   item.classList.add('pDarkText')
-    // })
-    // $a('.aDarkText').forEach((item) => {
-    //   item.classList.add('aDarkText')
-    // })
-    // if (!document.body.classList.contains('dark-mode')) {
-    //   $a('.spanDarkText').forEach((item) => {
-    //     item.classList.remove('spanDarkText')
-    //   })
-    //   $a('.h2DarkText').forEach((item) => {
-    //     item.classList.remove('h2DarkText')
-    //   })
-    //   $a('.h3DarkText').forEach((item) => {
-    //     item.classList.remove('h3DarkText')
-    //   })
-    //   $a('.pDarkText').forEach((item) => {
-    //     item.classList.remove('pDarkText')
-    //   })
-    //   $a('.aDarkText').forEach((item) => {
-    //     item.classList.remove('aDarkText')
-    //   })
-    // }
+// a.forEach((item) => {
+//   console.log(item)
+//   item.classList.add('spanDarkText')
+// })
+// $a('.h2DarkText').forEach((item) => {
+//   item.classList.add('h2DarkText')
+// })
+// $a('.h3DarkText').forEach((item) => {
+//   item.classList.add('h3DarkText')
+// })
+// $a('.pDarkText').forEach((item) => {
+//   item.classList.add('pDarkText')
+// })
+// $a('.aDarkText').forEach((item) => {
+//   item.classList.add('aDarkText')
+// })
+// if (!document.body.classList.contains('dark-mode')) {
+//   $a('.spanDarkText').forEach((item) => {
+//     item.classList.remove('spanDarkText')
+//   })
+//   $a('.h2DarkText').forEach((item) => {
+//     item.classList.remove('h2DarkText')
+//   })
+//   $a('.h3DarkText').forEach((item) => {
+//     item.classList.remove('h3DarkText')
+//   })
+//   $a('.pDarkText').forEach((item) => {
+//     item.classList.remove('pDarkText')
+//   })
+//   $a('.aDarkText').forEach((item) => {
+//     item.classList.remove('aDarkText')
+//   })
+// }
+
+// =============================== Filter category title func ========================================================
+let categorLinkWrapp = $(".categoryLinksWrapp-tab");
+let allCat = [];
+// console.log(categorLinkWrapp);
+db.map((el, ind, arr) => {
+  if (!allCat.find((e) => e == el.categoryTitle)) {
+    allCat.push(el.categoryTitle);
+  }
+});
+allCat.map((cat) => {
+  let catTitle = crElement(
+    "span",
+    "catLink",
+    `
+    <button class="tablinks" onclick="openCity(event, "${cat}")">${cat}</button>
+
+`
+  );
+  categorLinkWrapp.appendChild(catTitle);
+});
+$a(".tablinks")[0].classList.add("activeTab");
+
+$a(".tablinks").forEach((el) => {
+  el.addEventListener("click", (ev) => {
+    $(".activeTab").classList.remove("activeTab");
+    ev.target.classList.add("activeTab");
+  });
+});
+
+$(".categoryLinksWrapp-tab").addEventListener("click", (e) => {
+  $(".cardsWrapp").innerHTML = "";
+  createCategoryCards(e.target.textContent);
+});
+
+function createCategoryCards(catName) {
+  db.map((el) => {
+
+    if (catName == el.categoryTitle) {
+      let catCard = crElement(
+        "div",
+        "catCard",
+        `
+  
+  <div class="catCard">
+  <span class="cardInfoo">
+    <h3 class="cardTitle">${el.categoryTitle}</h3>
+    <button class="cardBtn2">Explore</button>
+
+  </span>
+  
+</div>  
+  `
+      );
+      // background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      catCard.style.backgroundImage = `url(${el.roomImg})`;
+      catCard.style.backgroundSize = "cover";
+      catCard.style.backgroundPosition = "canter";
+      catCard.style.backgroundRepeat = "no-repeat";
+
+      $(".cardsWrapp").appendChild(catCard);
+    }
+ 
+  });
+}
+createCategoryCards("Bedroom")
+
+// function openCity(evt, cityName) {
+//   var i, tabcontent, tablinks;
+//   tabcontent = document.getElementsByClassName("tabcontent");
+//   for (i = 0; i < tabcontent.length; i++) {
+//     tabcontent[i].style.display = "none";
+//   }
+//   tablinks = document.getElementsByClassName("tablinks");
+//   for (i = 0; i < tablinks.length; i++) {
+//     tablinks[i].className = tablinks[i].className.replace(" active", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " active";
+// }
+
+// ===============================Popular card create
+
+db.map((el)=>{
+let popularCard= crElement("div", "popularPrCard", `
+<div class="topImgWrapp">
+        <img src="${el.prImg}" title="chair" class="popularCardImg">
+    </div>
+<h4 class="popularPrCard-popularCardTitle">${el.prTitle}</h4>
+<p class="popularPrCard-popularCarDesc">${el.prDesc}</p>
+<p class="popularPrCard-popularCarPrice">${el.prPrice}</p>
+
+
+
+`);
+
+$(".popularPrWrapp").appendChild(popularCard);
+
+
+})
+
+
+
+
+
+

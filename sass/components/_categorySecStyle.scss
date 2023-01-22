@@ -1,0 +1,629 @@
+.categoryTitle {
+  font-weight: 700;
+  font-size: 64px;
+
+  line-height: 85px;
+  color: $txtColor;
+  text-align: center;
+  margin: 100px 0 100px 0;
+}
+.categorySecWrapp {
+  display: flex;
+  justify-content: space-between;
+
+  &-leftCatInfo {
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    .searchInptWrapp {
+      background-color: #f0f0f0;
+
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      padding: 26px 32px;
+      margin-bottom: 106px;
+      .categorySearch {
+        border: none;
+        outline: none;
+        margin-left: 18px;
+        background: transparent;
+        width: 100%;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    .categoryLinksWrapp {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px;
+      .allCategoryBtn {
+        order: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 32px 20px;
+        gap: 18px;
+        width: 265px;
+        height: 89px;
+        background: #70908b;
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        border: none;
+        color: #ffffff;
+        .arrowRightIcon {
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          background-color: #597b76;
+          .arrowRightIcon {
+            transform: translateX(20px);
+          }
+        }
+      }
+      &-tab {
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid #07484a;
+
+        .catLink {
+          position: relative;
+          order: 3;
+          button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 28px 50px;
+            transition: 0.3s;
+            font-size: 17px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            font-family: $rFont;
+            color: $txtColor;
+            &:hover {
+              background-color: #07484a0c;
+            }
+          }
+          .activeTab {
+            position: relative !important;
+            background-color: #07484a39;
+            &:hover {
+              background-color: #07484a39;
+            }
+            &::before {
+              display: block;
+              content: "";
+              position: absolute !important;
+              right: -2.5px !important;
+              top: 15px !important;
+              width: 4px !important;
+              height: 60px !important;
+              background: #07484a !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-rightCatInfo {
+    max-width: 1211px;
+    width: 100%;
+    .cardsWrapp {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .catCard {
+        max-width: 589px !important;
+
+        width: 100%;
+        height: 321px;
+        border-radius: 10px;
+        position: relative;
+        padding-top: 72px;
+        margin-bottom: 30px;
+        &:hover {
+          .cardInfoo {
+            transform: translateY(-30px);
+            display: block;
+          }
+        }
+        .cardInfoo {
+          transform: translateY(100px);
+          transition: 0.6s all ease;
+          display: none;
+          .cardTitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 85px;
+            font-family: $playFont;
+            text-align: center;
+            color: #fdfbf8;
+            margin-bottom: 32px;
+            transition: 0.4s all ease;
+          }
+          .cardBtn2 {
+            display: block;
+            margin: auto;
+            border: none;
+            padding: 14px 20px;
+            width: 150px;
+            height: 53px;
+            background: #e0eff6;
+            border-radius: 6px;
+            transition: 0.4s all ease;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .categoryTitle {
+    font-weight: 700;
+
+    font-size: 48px;
+    line-height: 85px;
+    color: $txtColor;
+    text-align: center;
+    margin: 100px 0 100px 0;
+  }
+
+  .categorySecWrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &-leftCatInfo {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .searchInptWrapp {
+        background-color: #f0f0f0;
+        max-width: 463px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 26px 32px;
+        margin-bottom: 106px;
+        .categorySearch {
+          border: none;
+          outline: none;
+          margin-left: 18px;
+          background: transparent;
+          width: 100%;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+        }
+      }
+    }
+    &-rightCatInfo {
+      max-width: 1211px;
+      width: 100%;
+      .cardsWrapp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .catCard {
+          width: 462px;
+          height: 321px;
+          border-radius: 10px;
+          position: relative;
+          padding-top: 72px;
+          margin-bottom: 30px;
+          &:hover {
+            .cardInfoo {
+              transform: translateY(-30px);
+              display: block;
+            }
+          }
+          .cardInfoo {
+            transform: translateY(100px);
+            transition: 0.6s all ease;
+            display: none;
+            .cardTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 64px;
+              line-height: 85px;
+              font-family: $playFont;
+              text-align: center;
+              color: #fdfbf8;
+              margin-bottom: 32px;
+              transition: 0.4s all ease;
+            }
+            .cardBtn2 {
+              display: block;
+              margin: auto;
+              border: none;
+              padding: 14px 20px;
+              width: 150px;
+              height: 53px;
+              background: #e0eff6;
+              border-radius: 6px;
+              transition: 0.4s all ease;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+  //   =================================================
+  .categoryLinksWrapp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .allCategoryBtn {
+      order: 4;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      margin-top: 80px;
+      padding: 32px 20px;
+      gap: 18px;
+      width: 265px;
+      height: 89px;
+      background: #70908b;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      border: none;
+      color: #ffffff;
+      .arrowRightIcon {
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        background-color: #597b76;
+        .arrowRightIcon {
+          transform: translateX(20px);
+        }
+      }
+    }
+    &-tab {
+      display: flex;
+      flex-direction: row !important;
+      border: none !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      .catLink {
+        position: relative;
+        order: 3;
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        button {
+          display: inline-block !important;
+          width: 250px !important;
+          text-align: left;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 28px 50px;
+          transition: 0.3s;
+          font-size: 17px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28px;
+          font-family: $rFont;
+          color: $txtColor;
+          text-align: center !important;
+
+          &:hover {
+            background-color: #07484a0c;
+          }
+        }
+        .activeTab {
+          position: relative !important;
+          background-color: transparent !important;
+          text-decoration: underline;
+          &:hover {
+            background-color: #07484a39;
+          }
+          &::before {
+            display: none !important;
+            content: "";
+            position: absolute !important;
+            right: -2.5px !important;
+            top: 15px !important;
+            width: 4px !important;
+            height: 60px !important;
+            background: #07484a !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Create an active/current tablink class */
+
+@media only screen and (max-width: 768px) {
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 85px;
+    color: $txtColor;
+    text-align: center;
+    margin: 100px 0 100px 0;
+  }
+  .categorySecWrapp {
+    &-rightCatInfo {
+      max-width: 1211px;
+      width: 100%;
+      .cardsWrapp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .catCard {
+          width: 348px;
+          height: 321px;
+          border-radius: 10px;
+          position: relative;
+          padding-top: 72px;
+          margin-bottom: 30px;
+          &:hover {
+            .cardInfoo {
+              transform: translateY(-30px);
+              display: block;
+            }
+          }
+          .cardInfoo {
+            transform: translateY(100px);
+            transition: 0.6s all ease;
+            display: none;
+            .cardTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 64px;
+              line-height: 85px;
+              font-family: $playFont;
+              text-align: center;
+              color: #fdfbf8;
+              margin-bottom: 32px;
+              transition: 0.4s all ease;
+            }
+            .cardBtn2 {
+              display: block;
+              margin: auto;
+              border: none;
+              padding: 14px 20px;
+              width: 150px;
+              height: 53px;
+              background: #e0eff6;
+              border-radius: 6px;
+              transition: 0.4s all ease;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .categoryTitle {
+    font-weight: 700;
+
+    font-size: 28px;
+    line-height: 85px;
+    color: $txtColor;
+    text-align: center;
+    margin: 80px 0 23px 0;
+  }
+
+  .categorySecWrapp {
+    &-leftCatInfo {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .searchInptWrapp {
+    
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 26px 32px;
+        margin-bottom: 11px;
+        .categorySearch {
+          border: none;
+          outline: none;
+          margin-left: 18px;
+          background: transparent;
+          width: 100%;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23px;
+        }
+      }
+      .categoryLinksWrapp {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .allCategoryBtn {
+          order: 4;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          justify-content: center;
+          margin-top: 40px;
+          padding: 32px 20px;
+          gap: 18px;
+          width: 265px;
+          height: 89px;
+          background: #70908b;
+          border-radius: 10px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          border: none;
+          color: #ffffff;
+          .arrowRightIcon {
+            transition: all 0.3s ease;
+          }
+          &:hover {
+            background-color: #597b76;
+            .arrowRightIcon {
+              transform: translateX(20px);
+            }
+          }
+        }
+        &-tab {
+          display: flex;
+          flex-direction: row !important;
+          border: none !important;
+          flex-wrap: wrap !important;
+
+          .catLink {
+            position: relative;
+            order: 3;
+            display: flex;
+            flex-direction: row !important;
+            width: 120px !important;
+            margin: 6px 4px;
+            flex-wrap: wrap !important;
+            justify-content: start !important;
+            align-items: center !important;
+            border-radius: 84px;
+            button {
+              display: inline-block !important;
+              
+              background-color: transparent;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 0px 12px 0 12px  !important;
+            
+              color: #000 !important;
+              height: 27px;
+              font-size: 12px;
+            
+              border-radius: 84px;
+              font-family: $rFont;
+              color: $txtColor;
+              text-align: center !important;
+              background-color: #F5F5F5 !important;
+
+              &:hover {
+                background-color: #07484a0c;
+              }
+            }
+            .activeTab {
+              position: relative !important;
+              background-color:#597b76 !important;
+              text-decoration: none;
+              &:hover {
+                background-color: #07484a39;
+              }
+              &::before {
+                display: none !important;
+                content: "";
+                position: absolute !important;
+                right: -2.5px !important;
+                top: 15px !important;
+                width: 4px !important;
+                height: 60px !important;
+                background: #07484a !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-rightCatInfo {
+      max-width: 1211px;
+      width: 100%;
+      .cardsWrapp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .catCard {
+          width: 288px;
+          height: 321px;
+          border-radius: 10px;
+          position: relative;
+          padding-top: 72px;
+          margin-bottom: 30px;
+          &:hover {
+            .cardInfoo {
+              transform: translateY(-30px);
+              display: block;
+            }
+          }
+          .cardInfoo {
+            transform: translateY(100px);
+            transition: 0.6s all ease;
+            display: none;
+            .cardTitle {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 64px;
+              line-height: 85px;
+              font-family: $playFont;
+              text-align: center;
+              color: #fdfbf8;
+              margin-bottom: 32px;
+              transition: 0.4s all ease;
+            }
+            .cardBtn2 {
+              display: block;
+              margin: auto;
+              border: none;
+              padding: 14px 20px;
+              width: 150px;
+              height: 53px;
+              background: #e0eff6;
+              border-radius: 6px;
+              transition: 0.4s all ease;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "myFonts";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "myFonts1";
@@ -19,22 +19,12 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  transition: all 0.1 ease;
-}
-
-body {
-  overflow-x: hidden !important;
-}
-
-a {
-  cursor: pointer;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1619px !important;
   width: 100% !important;
-  position: relative;
 }
 
 .dark-mode {
@@ -846,9 +836,598 @@ a {
     text-decoration: none;
   }
 }
+.categoryTitle {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  color: #07484A;
+  text-align: center;
+  margin: 100px 0 100px 0;
+}
+
+.categorySecWrapp {
+  display: flex;
+  justify-content: space-between;
+}
+.categorySecWrapp-leftCatInfo {
+  display: flex;
+  flex-direction: column;
+  width: 349px;
+}
+.categorySecWrapp-leftCatInfo .searchInptWrapp {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 26px 32px;
+  margin-bottom: 106px;
+}
+.categorySecWrapp-leftCatInfo .searchInptWrapp .categorySearch {
+  border: none;
+  outline: none;
+  margin-left: 18px;
+  background: transparent;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn {
+  order: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  padding: 32px 20px;
+  gap: 18px;
+  width: 265px;
+  height: 89px;
+  background: #70908b;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  color: #ffffff;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn .arrowRightIcon {
+  transition: all 0.3s ease;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn:hover {
+  background-color: #597b76;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn:hover .arrowRightIcon {
+  transform: translateX(20px);
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #07484a;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink {
+  position: relative;
+  order: 3;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 28px 50px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "myFonts";
+  color: #07484A;
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink button:hover {
+  background-color: rgba(7, 72, 74, 0.0470588235);
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab {
+  position: relative !important;
+  background-color: rgba(7, 72, 74, 0.2235294118);
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab:hover {
+  background-color: rgba(7, 72, 74, 0.2235294118);
+}
+.categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab::before {
+  display: block;
+  content: "";
+  position: absolute !important;
+  right: -2.5px !important;
+  top: 15px !important;
+  width: 4px !important;
+  height: 60px !important;
+  background: #07484a !important;
+}
+.categorySecWrapp-rightCatInfo {
+  max-width: 1211px;
+  width: 100%;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp .catCard {
+  max-width: 589px !important;
+  width: 100%;
+  height: 321px;
+  border-radius: 10px;
+  position: relative;
+  padding-top: 72px;
+  margin-bottom: 30px;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp .catCard:hover .cardInfoo {
+  transform: translateY(-30px);
+  display: block;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo {
+  transform: translateY(100px);
+  transition: 0.6s all ease;
+  display: none;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardTitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 85px;
+  font-family: "play";
+  text-align: center;
+  color: #fdfbf8;
+  margin-bottom: 32px;
+  transition: 0.4s all ease;
+}
+.categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardBtn2 {
+  display: block;
+  margin: auto;
+  border: none;
+  padding: 14px 20px;
+  width: 150px;
+  height: 53px;
+  background: #e0eff6;
+  border-radius: 6px;
+  transition: 0.4s all ease;
+  cursor: pointer;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 85px;
+    color: #07484A;
+    text-align: center;
+    margin: 100px 0 100px 0;
+  }
+  .categorySecWrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .categorySecWrapp-leftCatInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .categorySecWrapp-leftCatInfo .searchInptWrapp {
+    background-color: #f0f0f0;
+    max-width: 463px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 26px 32px;
+    margin-bottom: 106px;
+  }
+  .categorySecWrapp-leftCatInfo .searchInptWrapp .categorySearch {
+    border: none;
+    outline: none;
+    margin-left: 18px;
+    background: transparent;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .categorySecWrapp-rightCatInfo {
+    max-width: 1211px;
+    width: 100%;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard {
+    width: 462px;
+    height: 321px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 72px;
+    margin-bottom: 30px;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard:hover .cardInfoo {
+    transform: translateY(-30px);
+    display: block;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo {
+    transform: translateY(100px);
+    transition: 0.6s all ease;
+    display: none;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+    font-family: "play";
+    text-align: center;
+    color: #fdfbf8;
+    margin-bottom: 32px;
+    transition: 0.4s all ease;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardBtn2 {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 14px 20px;
+    width: 150px;
+    height: 53px;
+    background: #e0eff6;
+    border-radius: 6px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+  }
+  .categoryLinksWrapp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryLinksWrapp .allCategoryBtn {
+    order: 4;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 80px;
+    padding: 32px 20px;
+    gap: 18px;
+    width: 265px;
+    height: 89px;
+    background: #70908b;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    color: #ffffff;
+  }
+  .categoryLinksWrapp .allCategoryBtn .arrowRightIcon {
+    transition: all 0.3s ease;
+  }
+  .categoryLinksWrapp .allCategoryBtn:hover {
+    background-color: #597b76;
+  }
+  .categoryLinksWrapp .allCategoryBtn:hover .arrowRightIcon {
+    transform: translateX(20px);
+  }
+  .categoryLinksWrapp-tab {
+    display: flex;
+    flex-direction: row !important;
+    border: none !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categoryLinksWrapp-tab .catLink {
+    position: relative;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .categoryLinksWrapp-tab .catLink button {
+    display: inline-block !important;
+    width: 250px !important;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 28px 50px;
+    transition: 0.3s;
+    font-size: 17px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "myFonts";
+    color: #07484A;
+    text-align: center !important;
+  }
+  .categoryLinksWrapp-tab .catLink button:hover {
+    background-color: rgba(7, 72, 74, 0.0470588235);
+  }
+  .categoryLinksWrapp-tab .catLink .activeTab {
+    position: relative !important;
+    background-color: transparent !important;
+    text-decoration: underline;
+  }
+  .categoryLinksWrapp-tab .catLink .activeTab:hover {
+    background-color: rgba(7, 72, 74, 0.2235294118);
+  }
+  .categoryLinksWrapp-tab .catLink .activeTab::before {
+    display: none !important;
+    content: "";
+    position: absolute !important;
+    right: -2.5px !important;
+    top: 15px !important;
+    width: 4px !important;
+    height: 60px !important;
+    background: #07484a !important;
+  }
+}
+/* Create an active/current tablink class */
+@media only screen and (max-width: 768px) {
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 85px;
+    color: #07484A;
+    text-align: center;
+    margin: 100px 0 100px 0;
+  }
+  .categorySecWrapp-rightCatInfo {
+    max-width: 1211px;
+    width: 100%;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard {
+    width: 348px;
+    height: 321px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 72px;
+    margin-bottom: 30px;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard:hover .cardInfoo {
+    transform: translateY(-30px);
+    display: block;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo {
+    transform: translateY(100px);
+    transition: 0.6s all ease;
+    display: none;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+    font-family: "play";
+    text-align: center;
+    color: #fdfbf8;
+    margin-bottom: 32px;
+    transition: 0.4s all ease;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardBtn2 {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 14px 20px;
+    width: 150px;
+    height: 53px;
+    background: #e0eff6;
+    border-radius: 6px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .categoryTitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 85px;
+    color: #07484A;
+    text-align: center;
+    margin: 80px 0 23px 0;
+  }
+  .categorySecWrapp-leftCatInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .categorySecWrapp-leftCatInfo .searchInptWrapp {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 26px 32px;
+    margin-bottom: 11px;
+  }
+  .categorySecWrapp-leftCatInfo .searchInptWrapp .categorySearch {
+    border: none;
+    outline: none;
+    margin-left: 18px;
+    background: transparent;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn {
+    order: 4;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 32px 20px;
+    gap: 18px;
+    width: 265px;
+    height: 89px;
+    background: #70908b;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    border: none;
+    color: #ffffff;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn .arrowRightIcon {
+    transition: all 0.3s ease;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn:hover {
+    background-color: #597b76;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp .allCategoryBtn:hover .arrowRightIcon {
+    transform: translateX(20px);
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab {
+    display: flex;
+    flex-direction: row !important;
+    border: none !important;
+    flex-wrap: wrap !important;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink {
+    position: relative;
+    order: 3;
+    display: flex;
+    flex-direction: row !important;
+    width: 120px !important;
+    margin: 6px 4px;
+    flex-wrap: wrap !important;
+    justify-content: start !important;
+    align-items: center !important;
+    border-radius: 84px;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink button {
+    display: inline-block !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 12px 0 12px !important;
+    color: #000 !important;
+    height: 27px;
+    font-size: 12px;
+    border-radius: 84px;
+    font-family: "myFonts";
+    color: #07484A;
+    text-align: center !important;
+    background-color: #F5F5F5 !important;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink button:hover {
+    background-color: rgba(7, 72, 74, 0.0470588235);
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab {
+    position: relative !important;
+    background-color: #597b76 !important;
+    text-decoration: none;
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab:hover {
+    background-color: rgba(7, 72, 74, 0.2235294118);
+  }
+  .categorySecWrapp-leftCatInfo .categoryLinksWrapp-tab .catLink .activeTab::before {
+    display: none !important;
+    content: "";
+    position: absolute !important;
+    right: -2.5px !important;
+    top: 15px !important;
+    width: 4px !important;
+    height: 60px !important;
+    background: #07484a !important;
+  }
+  .categorySecWrapp-rightCatInfo {
+    max-width: 1211px;
+    width: 100%;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard {
+    width: 288px;
+    height: 321px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 72px;
+    margin-bottom: 30px;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard:hover .cardInfoo {
+    transform: translateY(-30px);
+    display: block;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo {
+    transform: translateY(100px);
+    transition: 0.6s all ease;
+    display: none;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85px;
+    font-family: "play";
+    text-align: center;
+    color: #fdfbf8;
+    margin-bottom: 32px;
+    transition: 0.4s all ease;
+  }
+  .categorySecWrapp-rightCatInfo .cardsWrapp .catCard .cardInfoo .cardBtn2 {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 14px 20px;
+    width: 150px;
+    height: 53px;
+    background: #e0eff6;
+    border-radius: 6px;
+    transition: 0.4s all ease;
+    cursor: pointer;
+  }
+}
 @font-face {
   font-family: "myFonts";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "myFonts1";
@@ -1155,7 +1734,7 @@ a {
 }
 @font-face {
   font-family: "myFonts";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "myFonts1";
@@ -1172,6 +1751,7 @@ a {
 .newslatter {
   display: flex;
   height: 100%;
+  margin: 100px 0 0 0;
 }
 .newslatter__box {
   width: 50%;
@@ -1648,6 +2228,70 @@ a {
   object-fit: cover;
 }
 
+.popularProductTitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 85px;
+  text-align: center;
+  color: #07484A;
+  margin-top: 100px;
+  margin-bottom: 54px;
+}
+
+.popularProducts {
+  position: relative;
+}
+.popularProducts .popularSecBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.popularPrWrapp {
+  margin-bottom: 100px;
+  display: flex;
+  overflow-x: scroll;
+}
+.popularPrWrapp .popularPrCard {
+  background-color: #caf3e5;
+  width: 630px;
+  padding: 64px 40px 60px 40px;
+  border-radius: 16px;
+  margin-right: 32px;
+}
+.popularPrWrapp .popularPrCard .topImgWrapp {
+  text-align: center;
+}
+.popularPrWrapp .popularPrCard-popularCardTitle {
+  margin: 40px 0 10px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "open sans";
+  color: #70908b;
+}
+.popularPrWrapp .popularPrCard-popularCarDesc {
+  margin: 0px 0 20px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "open sans";
+  color: #70908b;
+}
+.popularPrWrapp .popularPrCard-popularCarPrice {
+  margin: 0px 0 20px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #70908b;
+  font-family: "open sans";
+}
+
 /* The Modal (background) */
 .modalWindow {
   display: none; /* Hidden by default */
@@ -1772,7 +2416,7 @@ a {
 
 @font-face {
   font-family: "myFonts";
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: "myFonts1";
